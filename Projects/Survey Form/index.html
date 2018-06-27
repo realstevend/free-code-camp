@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+  <h1 id="title">Survey Form</h1>
+  <div class="container">
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">*Name:
+        <input type="text" name="personal" id="name" placeholder="Enter your name" class="personal-label" required>
+      </label>
+      <label id="email-label" for="email">*Email:
+        <input type="text" name="personal" id="email" placeholder="Enter your email" class="personal-label" required>
+      </label>
+      <label id="number-label" for="number">*Age:
+        <input type="number" name="personal" id="number" placeholder="Age" class="personal-label" min="1" required>
+      </label>
+
+      <p>Which option best describes your current role?</p>
+      <select id="dropdown" name="roles">
+        <option value="student">Student</option>
+        <option value="full-time-job">Full Time Job</option>
+        <option value="full-time-learner">Full Time Learner</option>
+        <option>Prefer not to say</option>
+        <option>other</option>
+      </select>
+
+      <p>* How likely is it that you would recommend freeCodeCamp to a friend?</p>
+      <label>
+        <input type="radio" name="likely" value="definitely"> Definitely</label>
+      <br>
+      <label>
+        <input type="radio" name="likely" value="maybe"> Maybe</label>
+      <br>
+      <label>
+        <input type="radio" name="likely" value="not-sure"> Not Sure</label>
+      <br>
+
+      <p>What do you like most in FCC:</p>
+      <select id="dropdown-subjects" name=subjects>
+        <option disabled="disabled" selected>Select an option</option>
+        <option value="challenges">Challenges</option>
+        <option value="projects">Projects</option>
+        <option value="community">Community</option>
+        <option value="open-source">Open Source</option>
+      </select>
+      <br>
+      <br>
+
+      <p>
+        Things that should be improved in the future (Check all that apply):
+      </p>
+      <label>
+        <input type="checkbox" value="front-end-projects"> Front-end Projects</label>
+      <br>
+      <label>
+        <input type="checkbox" value="back-end-projects"> Back-end Projects</label>
+      <br>
+      <label>
+        <input type="checkbox" value="data-visualization"> Data Visualization</label>
+      <br>
+      <label>
+        <input type="checkbox" value="challenges"> Challenges</label>
+      <br>
+      <label>
+        <input type="checkbox" value="open-source-community"> Open Source Community</label>
+      <br>
+      <label>
+        <input type="checkbox" value="gitter-help-rooms"> Gitter Help Rooms</label>
+      <br>
+      <label>
+        <input type="checkbox" value="videos"> Videos</label>
+      <br>
+      <label>
+        <input type="checkbox" value="city-meetups"> City Meetups</label>
+      <br>
+      <label>
+        <input type="checkbox" value="wiki"> Wiki</label>
+      <br>
+      <label>
+        <input type="checkbox" value="forum"> Forum</label>
+      <br>
+      <label>
+        <input type="checkbox" value="additional-courses"> Additional Courses</label>
+      <br>
+      <br>
+      <p>Any Comments or Suggestions?</p>
+      <textarea placeholder="Enter your comments here..."></textarea>
+      <button id="submit" type="submit" form="survey-form" value="submit">Submit</button>
+    </form>
+  </div>
+</body>
+
+
+
+</html>

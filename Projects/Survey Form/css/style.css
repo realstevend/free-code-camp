@@ -1,0 +1,66 @@
+body {
+  background-color: steelblue;
+  min-width: 220px;
+}
+
+#title {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  width: 80%;
+  min-width: 200px;
+  background-color: white;
+  margin: auto;
+  padding: 20px;
+  border-radius: 5px;
+  font-family: Arial;
+  font-size: 1rem;
+}
+
+#description {
+  margin-bottom: 30px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.personal-label {
+  display: block;
+}
+
+[type="text"],
+[type="number"],
+[type="textarea"] {
+  margin: 10px 0 20px;
+  padding: 8px 5px;
+  width: 75%;
+  border: solid 1px lightgrey;
+  border-radius: 3px;
+}
+
+[type="radio"],
+[type="checkbox"] {
+  margin-bottom: 15px;
+}
+
+textarea {
+  resize: vertical;
+  width: 180px;
+  height: 70px;
+  display: block;
+  margin: auto;
+  border: solid 2px lightgrey;
+  border-radius: 3px;
+}
+
+#submit {
+  display: block;
+  margin: 20px auto;
+  background-color: green;
+  color: white;
+  font-size: 1.1rem;
+  border: 2px solid black;
+  border-radius: 3px;
+  padding: 7px 20px;
+}
